@@ -15,3 +15,6 @@ Primary data is collected via the public Jobicy API (`https://jobicy.com/api/v2/
 
 3. Run a live collection pass (initializes SQLite DB if absent and stores provenance):
    `python3 src/collector.py`
+
+4. Run Checkpoint 2 stakeholder SQL queries and daily yield report:
+   `python3 src/run_queries.py`
