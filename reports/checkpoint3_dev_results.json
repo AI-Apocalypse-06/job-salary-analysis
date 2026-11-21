@@ -1,0 +1,39 @@
+{
+  "welch_comparison": {
+    "python_employers_n": 20,
+    "non_python_employers_n": 35,
+    "python_mean_usd": 190198.12,
+    "non_python_mean_usd": 181982.77,
+    "mean_difference_usd": 8215.35,
+    "ci_95_low_usd": -19175.53,
+    "ci_95_high_usd": 35606.24,
+    "welch_t_stat": 0.6016,
+    "welch_df": 52.94,
+    "p_value": 0.55,
+    "interpretation": "Observational association between a Python mention and advertised annual USD salary midpoint among employers disclosing salary ranges (1 earliest listing per employer)."
+  },
+  "modeling": {
+    "total_eligible_listings": 75,
+    "total_unique_employers": 55,
+    "same_employer_exact_title_duplicates": 0,
+    "dev_listings": 60,
+    "dev_employers": 44,
+    "test_listings": 15,
+    "test_employers": 11,
+    "cv_5fold_grouped_mae_usd": {
+      "baseline_mean": 41005.91,
+      "ridge": 39263.32,
+      "decision_tree": 35712.87
+    },
+    "best_params": {
+      "ridge": {
+        "model__alpha": 10.0
+      },
+      "decision_tree": {
+        "model__max_depth": 2,
+        "model__min_samples_leaf": 6
+      }
+    },
+    "holdout_evaluated": false
+  }
+}
